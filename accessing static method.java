@@ -1,23 +1,23 @@
 import java.io.*;
 
-class Geek {
+class accessstatic {
 
-	public static String geekName = "";
+	public static String accessName = "";
 
-	public static void geek(String name)
+	public static void access(String name)
 	{
-		geekName = name;
+		accessName = name;
 	}
 }
 
-class GFG {
+class as {
 	public static void main(String[] args)
 	{
-		Geek.geek("vaibhav");
-		System.out.println(Geek.geekName);
+		accessstatic.access("rounak");
+		System.out.println(accessstatic.accessName);
 
-		Geek obj = new Geek();
-		obj.geek("mohit");
-		System.out.println(obj.geekName);
+		accessstatic obj = new accessstatic();
+		obj.access("kiran");
+		System.out.println(obj.accessName);
 	}
 }
